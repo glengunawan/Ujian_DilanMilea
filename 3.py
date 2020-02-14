@@ -28,10 +28,12 @@ for i in valuesProvinsi:
 for i in dataProvinsi[str(kodeProvinsiDilan)]: 
     if i["urban"] == "SAMPORA" : 
         kodePosDilan = i["postal_code"]
+        break
 
 for i in dataProvinsi[str(kodeProvinsiMilea)]: 
     if i["urban"] == "CITARUM" : 
         kodePosMilea = i["postal_code"]
+        break
 
 apikey = "AkaypVfrop7FofpXt7tATDTwPKmBM3Lx7NaBXlDnUyBAvgLrop78L2s0kkQvu4OJ" 
 url = f"https://www.zipcodeapi.com/rest/{apikey}/distance.json/{kodePosDilan}/{kodePosMilea}/km " 
